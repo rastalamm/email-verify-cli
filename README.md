@@ -1,9 +1,7 @@
 # CLI tool to verify valid email addresses
 
-**Current version works with Mailbox Layer only (you can manually change to verify via NeverBounce but need to authenticate prior to running step 3)**
-
 ##### Follow below steps for this to work
-1. Register for a free account at either/both [Neverbounce](https://neverbounce.com/) or [MailboxLayer](https://mailboxlayer.com/)
+1. Register for a free account at either/both [Never Bounce](https://neverbounce.com/) or [MailboxLayer](https://mailboxlayer.com/)
 
 2. Create `apiKeys.js` file in root of project that
 A. Contains your credentials
@@ -20,10 +18,11 @@ module.exports = {
     }
 };
 ```
-3. Run `$ node check.js FILENAME` and wait for the results **
+3. Run `$ node check.js FILENAME SERVICECODE` and wait for the results **
 
 
 ** Things to consider
+* SERVICECODE is mbl for Mailbox Layer or nb for Never Bounce
 * FILENAME should be located in `/desktop` and include the .csv extension => `emailList.csv`
 * The output will be written to `/desktop` as `FILENAME`+ `Results.csv` => `emailListResults.csv`
 * To authenticate with NeverBounce, make sure you include your username and key in the apiKeys.js file. Run `$ node authenticate.js`
