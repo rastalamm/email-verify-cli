@@ -34,11 +34,11 @@
     };
 
     const validationServiceLookup = (validationServiceInput) => {
-        if (validationServiceInput == "nb") {
+        if (validationServiceInput === "nb") {
             return Validators.neverBounceValidator;
         }
 
-        if (validationServiceInput == "mbl") {
+        if (validationServiceInput === "mbl") {
             return Validators.mailboxLayerValidator;
         }
 
@@ -56,7 +56,7 @@
                 console.log(`The ${fileName} was created ${fileOutput}`);
             })
             .catch(function (error) {
-                console.error(`There was an error with creating the ${fileName}`, error);
+                throw new Error(`There was an error with creating the ${fileName} \n ${error}`);
             });
     };
 
@@ -96,7 +96,7 @@
             .then(function (csv) {
                 const resultFileName = fileName.replace('.csv', 'Results.csv');
 
-                writeCsvFile(resultFileName, csv);
+                return writeCsvFile(resultFileName, csv);
             })
             .catch(console.error)
     };
