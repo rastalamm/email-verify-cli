@@ -1,0 +1,26 @@
+{
+  "name": "email-verify-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apiKeys.js",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "fast-csv": "^2.3.0",
+    "neverbounce": "^0.2.2",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rastalamm/email-verify-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rastalamm/email-verify-cli/issues"
+  },
+  "homepage": "https://github.com/Rastalamm/email-verify-cli#readme"
+}
