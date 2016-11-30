@@ -22,7 +22,7 @@ module.exports = {
 
 
 ** Things to consider
-* SERVICECODE is mbl for Mailbox Layer or nb for Never Bounce
+* SERVICECODE is `mbl` for Mailbox Layer or `nb` for Never Bounce
 * FILENAME should be located in `/desktop` and include the .csv extension => `emailList.csv`
 * The output will be written to `/desktop` as `FILENAME`+ `Results.csv` => `emailListResults.csv`
 * To authenticate with NeverBounce, make sure you include your username and key in the apiKeys.js file. Run `$ node authenticate.js`
