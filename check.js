@@ -7,9 +7,7 @@
     const csv = require('fast-csv');
     const fs = require('fs');
     const json2csv = Promise.promisify(require('json2csv'));
-    const mailboxLayerAccessKey = require('./apiKeys.js').mailboxLayerJudahLamm.key;
-    // const mailboxLayerAccessKey = require('./apiKeys.js').mailboxLayerJudahSkillSilo.key;
-    // const mailboxLayerAccessKey = require('./apiKeys.js').mailboxLayerJoshSkillSilo.key;
+    const mailboxLayerAccessKey = require('./apiKeys.js').mailboxLayer.key;
     const NeverBounce = require('neverbounce')({
         apiKey: apiUsername,
         apiSecret: apiSecretKey
