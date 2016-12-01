@@ -5,20 +5,21 @@
 
 2. Create `apiKeys.js` file in root of project that
 
-A. Contains your credentials
-B. Exports your credentials according to below format
+    A. Contains your credentials
 
-```
-module.exports = {
-    neverbounce: {
-        username: "1234567890",
-        key: "abcdefghijklmnopqrstuv"
-    },
-    mailboxLayer: {
-        key: "abcdefghijklmnopqrstuv"
-    }
-};
-```
+    B. Exports your credentials according to below format
+
+    ```
+    module.exports = {
+        neverbounce: {
+            username: "1234567890",
+            key: "abcdefghijklmnopqrstuv"
+        },
+        mailboxLayer: {
+            key: "abcdefghijklmnopqrstuv"
+        }
+    };
+    ```
 3. Run `$ node check.js FILENAME SERVICECODE` and wait for the results **
 
 
